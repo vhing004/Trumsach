@@ -1242,6 +1242,7 @@ select:focus {
   justify-content: center;
   align-items: center;
   margin-bottom: 12px;
+  padding: 20px;
 }
 .product_price {
   margin-bottom: 10px;
@@ -1311,9 +1312,6 @@ select:focus {
 .media_item {
   box-shadow: 2px 2px 3px #333;
   margin: 20px;
-}
-.media_item img {
-  width: 250px;
 }
 
 .arrows {
