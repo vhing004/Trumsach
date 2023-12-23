@@ -1,0 +1,239 @@
+.nav{
+    & .container{
+        height: 100px;
+        line-height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &_logo{
+        max-width: 125px;
+    }
+    &_inner{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    &_menu{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        list-style: none;
+        color: $color-menu-item;
+        & a{
+            color: $color-menu-item;
+            &:hover{
+                color: $color-main;
+            }
+        }
+    }
+    &_item{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 18px;
+        font-weight: 400;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        &:hover{
+            color: $color-main;
+        }
+    }
+    &_search{
+        max-width: 220px;
+        border-left: 1px solid #f2f2f2;
+        border-right: 1px solid #f2f2f2;
+        & input{
+            border: 0;
+            padding: 10px 20px;
+            height: 100px;
+            line-height: 100px;
+            font-size: 18px;
+            color: #ccc;
+            font-weight: 500;
+            max-width: 220px;
+            width: 100%;
+        }
+    }
+    &_contact{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 20px; 
+        & i{
+            color: var(--color);
+            &:hover{
+                color: $color-main;
+            }
+        }
+    }
+    &__menu2{
+        display: none;
+    }
+}
+.list_menu{
+    display: none;
+}
+.hero{
+    margin-bottom: 50px;
+}
+
+
+@media screen and (max-width: 1300px){
+    .nav{
+        &_item{
+            & i{
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1100px){
+.nav{
+    & .container{
+        justify-content: space-around;
+    }
+    &_menu{
+        gap: 25px;
+    }
+    &_search{
+        max-width: 190px;
+    }
+}
+}
+
+@media screen and (max-width: 1000px){
+    .nav{
+        & .container{
+            justify-content: space-between;
+            padding: 0px 40px;
+        }
+        &_menu,
+        &_contact,
+        &_search{
+            display: none;
+        }
+        &__menu2{
+            display: block;
+            font-size: 30px;
+            cursor: pointer;
+        }
+    }
+
+    .list_menu{
+        background-color: #faf7f2;
+        &__container{
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px 40px;
+        }
+        &_menu{
+            margin-bottom: 12px;
+        }
+        &_item{
+            width: 100%;
+            border-bottom: 1px solid #f1f1f1;
+            list-style: none;
+            color: $color-menu-item;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            height: 50px;
+            line-height: 50px;
+            &:hover{
+                color: $color-main;
+            }
+            & a{
+                font-size: 19px;
+                line-height: calc(34 / 19);
+                color: $color-menu-item;
+                &:hover{
+                    color: $color-main;
+                }
+            }
+        }
+        &_search{
+            padding: 12px 0;
+            border-bottom: 1px solid #f1f1f1;
+            & input{
+                width: 100%;
+                border: 0;
+                padding: 10px 20px;
+                height: 60px;
+                font-size: 18px;
+                color: $gray;
+                font-weight: 500;
+            }
+        }
+        &_contact{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            height: 60px;
+            line-height: 60px;
+            & i{
+                font-size: 20px;
+                color: var(--color);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .nav{
+        & .container{
+            height: 80px;
+            line-height: 80px;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .nav{
+        & .container{
+            height: 60px;
+            line-height: 60px;
+        }
+        &_logo{
+            max-width: 90px;
+        }
+        &__menu2{
+            font-size: 25px;
+        }
+    }
+    .list_menu{
+        &_search{
+            & input{
+                height: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .list_menu{
+        &_container{
+            padding: 20px;
+        }
+        &_contact{
+            justify-content: center;
+            height: 40px;
+            line-height: 40px;
+            padding-top: 10px;
+        }
+        &_search{
+            & input{
+                padding: 10px 12px;
+                font-size: 16px;
+            }
+        }
+        &_item{
+            height: 40px;
+            line-height: 40px;
+            & a{
+                font-size: 16px;
+            }
+        }
+    }
+}

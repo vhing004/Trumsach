@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trùm Sách</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Navbar -->
+      <nav class="nav">
+        <div class="container">
+          <a href="index.html" class="nav_logo">
+            <img src="image/logo.jpg" alt="" />
+          </a>
+          <div class="nav_inner">
+            <ul class="nav_menu">
+              <li class="nav_item">
+                <i class="fa-solid fa-house"></i>
+                <a href="#">Trang chủ</a>
+              </li>
+              <li class="nav_item">
+                <i class="fa-solid fa-circle-info"></i>
+                <a href="#">Giới thiệu</a>
+              </li>
+              <li class="nav_item">
+                <i class="fa-solid fa-book-open-reader"></i>
+                <a href="#">Điểm sách</a>
+              </li>
+              <li class="nav_item">
+                <i class="fa-solid fa-book"></i>
+                <a href="#">Sản phẩm</a>
+              </li>
+              <li class="nav_item">
+                <i class="fa-regular fa-newspaper"></i>
+                <a href="#">Tin tức</a>
+              </li>
+            </ul>
+            <div class="nav_search">
+              <input type="text" placeholder="Search" />
+            </div>
+            <div class="nav_contact">
+              <a href="#">
+                <i class="fa-brands fa-twitter" style="--color: #1da1f2"></i
+              ></a>
+              <a href="#">
+                <i
+                  class="fa-brands fa-square-facebook"
+                  style="--color: #4267b2"
+                ></i
+              ></a>
+              <a href="#">
+                <i class="fa-brands fa-youtube" style="--color: #dc3545"></i
+              ></a>
+            </div>
+            <div class="nav__menu2" id="menu">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </div>
+        <!-- Menu -->
+        <div id="list" class="list_menu">
+          <div class="list_menu__container">
+            <ul class="list_menu_menu">
+              <li class="list_menu_item">
+                <i class="fa-solid fa-house"></i>
+                <a href="#">Trang chủ</a>
+              </li>
+              <li class="list_menu_item">
+                <i class="fa-solid fa-circle-info"></i>
+                <a href="#">Giới thiệu</a>
+              </li>
+              <li class="list_menu_item">
+                <i class="fa-solid fa-book-open-reader"></i>
+                <a href="#">Điểm sách</a>
+              </li>
+              <li class="list_menu_item">
+                <i class="fa-solid fa-book"></i>
+                <a href="#">Sản phẩm</a>
+              </li>
+              <li class="list_menu_item">
+                <i class="fa-regular fa-newspaper"></i>
+                <a href="#">Tin tức</a>
+              </li>
+            </ul>
+            <div class="list_menu_search">
+              <input type="text" placeholder="Search" />
+            </div>
+            <div class="list_menu_contact">
+              <a href="#">
+                <i class="fa-brands fa-twitter" style="--color: #1da1f2"></i
+              ></a>
+              <a href="#">
+                <i
+                  class="fa-brands fa-square-facebook"
+                  style="--color: #4267b2"
+                ></i
+              ></a>
+              <a href="#">
+                <i class="fa-brands fa-youtube" style="--color: #dc3545"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Hero -->
+      <div class="hero">
+        <img src="image/header-img.jpg" alt="" />
+      </div>
+      <!-- Striking -->
+      <div class="striking">
+        <div class="container">
+          <div class="striking__title">
+            <span class="striking-h2">bài viết nổi bật</span>
+          </div>
+          <div class="striking_container">
+            <div class="striking_item striking_itemLeft">
+              <div class="striking_img">
+                <img src="image/tu-duy-thoat-ngheo.jpg" alt="" />
+              </div>
+              <a href="#" class="striking_title"
+                >3 thói quen tư duy nếu chịu khó rèn luyện sẽ giúp một người phá
+                kén trở nên tỏa sáng, ai cũng ước mình biết sớm hơn</a
+              >
+            </div>
+            <div class="striking_item striking_itemRight">
+              <div class="striking_img">
+                <img src="image/tu-duy-thoat-ngheo.jpg" alt="" />
+              </div>
+              <a href="#" class="striking_title"
+                >3 thói quen tư duy nếu chịu khó rèn luyện sẽ giúp một người phá
+                kén trở nên tỏa sáng, ai cũng ước mình biết sớm hơn</a
+              >
+            </div>
+            <div class="striking_item striking_itemRight">
+              <div class="striking_img">
+                <img src="image/tu-duy-thoat-ngheo.jpg" alt="" />
+              </div>
+              <a href="#" class="striking_title"
+                >3 thói quen tư duy nếu chịu khó rèn luyện sẽ giúp một người phá
+                kén trở nên tỏa sáng, ai cũng ước mình biết sớm hơn</a
+              >
+            </div>
+            <div class="striking_item striking_itemRight">
+              <div class="striking_img">
+                <img src="image/tu-duy-thoat-ngheo.jpg" alt="" />
+              </div>
+              <a href="#" class="striking_title"
+                >3 thói quen tư duy nếu chịu khó rèn luyện sẽ giúp một người phá
+                kén trở nên tỏa sáng, ai cũng ước mình biết sớm hơn</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Business -->
+      <div class="business">
+        <div class="container">
+          <div class="business_container">
+            <div class="striking__title">
+              <span class="striking-h2">góc doanh nhân</span>
+            </div>
+            <div class="business_list">
+              <div class="business_item">
+                <div class="business_img">
+                  <img src="image/tu-duy-thoat-ngheo.jpg" alt="" />
+                </div>
+                <div class="business_info">
+                  <div class="business_info-item">
+                    <i class="fa-regular fa-folder"></i>
+                    <a href="#"> Góc doanh nhân</a>
+                  </div>
+                  <div class="business_info-item">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Nguyễn Văn Cường</span>
+                  </div>
+                </div>
+                <a href="#" class="business_title">
+                  Vốn 20 triệu nên kinh doanh gì ?
+                </a>
+              </div>
+              <div class="business_item">
+                <div class="business_img">
+                  <img src="image/tu-duy-thoat-ngheo.jpg" alt="" />
+                </div>
+                <div class="business_info">
+                  <div class="business_info-item">
+                    <i class="fa-regular fa-folder"></i>
+                    <a href="#"> Góc doanh nhân</a>
+                  </div>
+                  <div class="business_info-item">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Nguyễn Văn Cường</span>
+                  </div>
+                </div>
+                <a href="#" class="business_title">
+                  Vốn 20 triệu nên kinh doanh gì ?
+                </a>
+              </div>
+              <div class="business_item">
+                <div class="business_img">
+                  <img src="image/tu-duy-thoat-ngheo.jpg" alt="" />
+                </div>
+                <div class="business_info">
+                  <div class="business_info-item">
+                    <i class="fa-regular fa-folder"></i>
+                    <a href="#"> Góc doanh nhân</a>
+                  </div>
+                  <div class="business_info-item">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Nguyễn Văn Cường</span>
+                  </div>
+                </div>
+                <a href="#" class="business_title">
+                  Vốn 20 triệu nên kinh doanh gì ?
+                </a>
+              </div>
+              <div class="business_item">
+                <div class="business_img">
+                  <img src="image/tu-duy-thoat-ngheo.jpg" alt="" />
+                </div>
+                <div class="business_info">
+                  <div class="business_info-item">
+                    <i class="fa-regular fa-folder"></i>
+                    <a href="#"> Góc doanh nhân</a>
+                  </div>
+                  <div class="business_info-item">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Nguyễn Văn Cường</span>
+                  </div>
+                </div>
+                <a href="#" class="business_title">
+                  Vốn 20 triệu nên kinh doanh gì ?
+                </a>
+              </div>
+              <div class="business_item">
+                <div class="business_img">
+                  <img src="image/tu-duy-thoat-ngheo.jpg" alt="" />
+                </div>
+                <div class="business_info">
+                  <div class="business_info-item">
+                    <i class="fa-regular fa-folder"></i>
+                    <a href="#"> Góc doanh nhân</a>
+                  </div>
+                  <div class="business_info-item">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Nguyễn Văn Cường</span>
+                  </div>
+                </div>
+                <a href="#" class="business_title">
+                  Vốn 20 triệu nên kinh doanh gì ?
+                </a>
+              </div>
+              <div class="business_item">
+                <div class="business_img">
+                  <img src="image/tu-duy-thoat-ngheo.jpg" alt="" />
+                </div>
+                <div class="business_info">
+                  <div class="business_info-item">
+                    <i class="fa-regular fa-folder"></i>
+                    <a href="#"> Góc doanh nhân</a>
+                  </div>
+                  <div class="business_info-item">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Nguyễn Văn Cường</span>
+                  </div>
+                </div>
+                <a href="#" class="business_title">
+                  Vốn 20 triệu nên kinh doanh gì ?
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="business_inner">
+            <div class="business__title">
+              <span>Đọc nhiều</span>
+            </div>
+            <div class="business_inner-list">
+              <div class="business_inner-item">
+                <div class="business_inner-img">
+                  <img src="image/review-being-buddha-at-work.png" alt="" />
+                </div>
+                <div class="business_innner-info">
+                  <div class="business_inner-info--item">
+                    <i class="fa-regular fa-folder"></i>
+                    <a href="#"> Điểm sách</a>
+                  </div>
+                  <a href="#" class="business_inner-title">
+                    Vốn 20 triệu nên kinh doanh gì ?
+                  </a>
+                </div>
+              </div>
+              <div class="business_inner-item">
+                <div class="business_inner-img">
+                  <img src="image/review-being-buddha-at-work.png" alt="" />
+                </div>
+                <div class="business_innner-info">
+                  <div class="business_inner-info--item">
+                    <i class="fa-regular fa-folder"></i>
+                    <a href="#"> Điểm sách</a>
+                  </div>
+                  <a href="#" class="business_inner-title">
+                    Vốn 20 triệu nên kinh doanh gì ?
+                  </a>
+                </div>
+              </div>
+              <div class="business_inner-item">
+                <div class="business_inner-img">
+                  <img src="image/review-being-buddha-at-work.png" alt="" />
+                </div>
+                <div class="business_innner-info">
+                  <div class="business_inner-info--item">
+                    <i class="fa-regular fa-folder"></i>
+                    <a href="#"> Điểm sách</a>
+                  </div>
+                  <a href="#" class="business_inner-title">
+                    Vốn 20 triệu nên kinh doanh gì ?
+                  </a>
+                </div>
+              </div>
+              <div class="business_inner-item">
+                <div class="business_inner-img">
+                  <img src="image/review-being-buddha-at-work.png" alt="" />
+                </div>
+                <div class="business_innner-info">
+                  <div class="business_inner-info--item">
+                    <i class="fa-regular fa-folder"></i>
+                    <a href="#"> Điểm sách</a>
+                  </div>
+                  <a href="#" class="business_inner-title">
+                    Vốn 20 triệu nên kinh doanh gì ?
+                  </a>
+                </div>
+              </div>
+              <div class="business_inner-item">
+                <div class="business_inner-img">
+                  <img src="image/review-being-buddha-at-work.png" alt="" />
+                </div>
+                <div class="business_innner-info">
+                  <div class="business_inner-info--item">
+                    <i class="fa-regular fa-folder"></i>
+                    <a href="#"> Điểm sách</a>
+                  </div>
+                  <a href="#" class="business_inner-title">
+                    Vốn 20 triệu nên kinh doanh gì ?
+                  </a>
+                </div>
+              </div>
+              <div class="business_inner-item">
+                <div class="business_inner-img">
+                  <img src="image/review-being-buddha-at-work.png" alt="" />
+                </div>
+                <div class="business_innner-info">
+                  <div class="business_inner-info--item">
+                    <i class="fa-regular fa-folder"></i>
+                    <a href="#"> Điểm sách</a>
+                  </div>
+                  <a href="#" class="business_inner-title">
+                    Vốn 20 triệu nên kinh doanh gì ?
+                  </a>
+                </div>
+              </div>
+              <div class="business_inner-item">
+                <div class="business_inner-img">
+                  <img src="image/review-being-buddha-at-work.png" alt="" />
+                </div>
+                <div class="business_innner-info">
+                  <div class="business_inner-info--item">
+                    <i class="fa-regular fa-folder"></i>
+                    <a href="#"> Điểm sách</a>
+                  </div>
+                  <a href="#" class="business_inner-title">
+                    Vốn 20 triệu nên kinh doanh gì ?
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Read -->
+      <div class="read">
+        <div class="container">
+          <div class="read_head">
+            <img src="image/57-trang-chu.jpg" alt="" />
+            <span>Phong cách đọc</span>
+          </div>
+          <div class="read_list">
+            <div class="read_item">
+              <div class="read_img">
+                <img src="image/tu-duy-thoat-ngheo.jpg" alt="" />
+              </div>
+              <a href="#"
+                >Tìm hiểu về Bất động sản: Bí quyết kinh doanh bất động sản
+                thành công</a
+              >
+            </div>
+            <div class="read_item">
+              <div class="read_img">
+                <img src="image/tu-duy-thoat-ngheo.jpg" alt="" />
+              </div>
+              <a href="#"
+                >Tìm hiểu về Bất động sản: Bí quyết kinh doanh bất động sản
+                thành công</a
+              >
+            </div>
+            <div class="read_item">
+              <div class="read_img">
+                <img src="image/tu-duy-thoat-ngheo.jpg" alt="" />
+              </div>
+              <a href="#"
+                >Tìm hiểu về Bất động sản: Bí quyết kinh doanh bất động sản
+                thành công</a
+              >
+            </div>
+            <div class="read_item">
+              <div class="read_img">
+                <img src="image/tu-duy-thoat-ngheo.jpg" alt="" />
+              </div>
+              <a href="#"
+                >Tìm hiểu về Bất động sản: Bí quyết kinh doanh bất động sản
+                thành công</a
+              >
+            </div>
+            <div class="read_item">
+              <div class="read_img">
+                <img src="image/tu-duy-thoat-ngheo.jpg" alt="" />
+              </div>
+              <a href="#"
+                >Tìm hiểu về Bất động sản: Bí quyết kinh doanh bất động sản
+                thành công</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Author -->
+      <div class="author">
+        <div class="container">
+          <h2 class="author__title">Giới thiệu tác giả</h2>
+          <p class="author_desc">
+            Bệnh viện Đa khoa Phương Đông quy tụ đội ngũ chuyên gia, bác sĩ,
+            dược sĩ và điều dưỡng được đào tạo bài bản đến chuyên sâu tại Việt
+            nam và nhiều nước có nết y học phát triển như Mỹ, Anh, Pháp... Luôn
+            lấy người bệnh là trung tâm, Phương Đông cam kết mang lại dịch vụ
+            chăm sóc sức khỏe toàn diện và chất lượng cao cho khách hàng.
+          </p>
+          <div class="author_container">
+            <div class="author_img">
+              <div class="author_img-img">
+
+                <img src="image/person.jpg" alt="" />
+              </div>
+              <h3>Nguyễn Văn Cường</h3>
+              <p>Chủ tịch công ty cp sach MCBOOKS</p>
+            </div>
+            <div class="author_content">
+              <div class="author_item">
+                <div class="author_info">
+                  <img src="image/icon-1.jpg" alt="" />
+                  <span>Giới thiệu</span>
+                </div>
+                <p class="author_des">
+                  Với gần 40 năm kinh nghiệm trong lĩnh vực Ung bướu và Tế bào
+                  gốc, PGS.TS. Bác sĩ Nguyễn Trung Chính - Nguyên Chủ nhiệm khoa
+                  và phụ trách trung tâm tế bào gốc Bệnh viện TW Quân đội 108 đã
+                  giúp hàng nghìn bệnh nhân trên cả nước chẩn đoán và điều trị
+                  các vấn đề về ung bướu; thực hiện thành công nhiều kĩ thuật
+                  khó trong lĩnh vực tế bào gốc.
+                </p>
+              </div>
+              <div class="author_item">
+                <div class="author_info">
+                  <i class="fa-solid fa-arrow-up-right-dots"></i>
+                  <span>Quá trình công tác</span>
+                </div>
+                <p class="author_des">
+                  1982: Chủ nhiệm khoa Bệnh viện 7 Quân khu 3
+                  <br />
+                  <br />
+                  1986 – 1994: Giám đốc Trung tâm Huyết học – truyền máu khu vực
+                  đồng bằng Bắc Bộ <br />
+                  <br />
+                  1999 - 2012. Chủ nhiệm khoa và phụ trách trung tâm tế bào gốc
+                  Bệnh viện TW Quân đội 108 <br />
+                  <br />
+                  2013 – 2016: Cố vấn cao cấp bệnh viện ung bướu Nghệ An và phụ
+                  trách Trung tâm ghép tế bào gốc <br />
+                  <br />
+                  2016 – 2018: Cố vấn cao cấp bệnh viện đại học y khoa Vinh –
+                  phụ trách Đơn vị tế bào gốc và chuyên gia cao cấp Trường đại
+                  học Y khoa Vinh
+                </p>
+              </div>
+              <div class="author_item">
+                <div class="author_info">
+                  <img src="image/icon-3.jpg" alt="" />
+                  <span>Các thành tích đạt được</span>
+                </div>
+                <p class="author_des">
+                  Huân chương Chiến công hạng Nhất <br />
+                  Bằng khen của Tổng LĐLĐ Việt Nam về sáng kiến
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Product -->
+      <div class="product">
+        <div class="container">
+          <div class="striking__title">
+            <span class="striking-h2">sản phẩm</span>
+          </div>
+          <div class="product_list">
+            <div class="product_item">
+              <div class="product_img">
+                <img src="image/bookook.jpg" alt="" />
+              </div>
+              <h3 class="product_title">
+                Sự lôi cuốn của content - Cách viết content hay..........
+              </h3>
+              <div class="product_price">
+                <span class="line">39.000đ</span>
+                <span class="none-500">31.200đ</span>
+                <span class="product_pecent">-20%</span>
+              </div>
+              <button class="product_btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Mua ngay</span>
+              </button>
+            </div>
+            <div class="product_item">
+              <div class="product_img">
+                <img src="image/bookook.jpg" alt="" />
+              </div>
+              <h3 class="product_title">
+                Sự lôi cuốn của content - Cách viết content hay..........
+              </h3>
+              <div class="product_price">
+                <span class="line">39.000đ</span>
+                <span class="none-500">31.200đ</span>
+                <span class="product_pecent">-20%</span>
+              </div>
+              <button class="product_btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Mua ngay</span>
+              </button>
+            </div>
+            <div class="product_item">
+              <div class="product_img">
+                <img src="image/bookook.jpg" alt="" />
+              </div>
+              <h3 class="product_title">
+                Sự lôi cuốn của content - Cách viết content hay..........
+              </h3>
+              <div class="product_price">
+                <span class="line">39.000đ</span>
+                <span class="none-500">31.200đ</span>
+                <span class="product_pecent">-20%</span>
+              </div>
+              <button class="product_btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Mua ngay</span>
+              </button>
+            </div>
+            <div class="product_item">
+              <div class="product_img">
+                <img src="image/bookook.jpg" alt="" />
+              </div>
+              <h3 class="product_title">
+                Sự lôi cuốn của content - Cách viết content hay..........
+              </h3>
+              <div class="product_price">
+                <span class="line">39.000đ</span>
+                <span class="none-500">31.200đ</span>
+                <span class="product_pecent">-20%</span>
+              </div>
+              <button class="product_btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Mua ngay</span>
+              </button>
+            </div>
+            <div class="product_item">
+              <div class="product_img">
+                <img src="image/bookook.jpg" alt="" />
+              </div>
+              <h3 class="product_title">
+                Sự lôi cuốn của content - Cách viết content hay..........
+              </h3>
+              <div class="product_price">
+                <span class="line">39.000đ</span>
+                <span class="none-500">31.200đ</span>
+                <span class="product_pecent">-20%</span>
+              </div>
+              <button class="product_btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Mua ngay</span>
+              </button>
+            </div>
+            <div class="product_item">
+              <div class="product_img">
+                <img src="image/bookook.jpg" alt="" />
+              </div>
+              <h3 class="product_title">
+                Sự lôi cuốn của content - Cách viết content hay..........
+              </h3>
+              <div class="product_price">
+                <span class="line">39.000đ</span>
+                <span class="none-500">31.200đ</span>
+                <span class="product_pecent">-20%</span>
+              </div>
+              <button class="product_btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Mua ngay</span>
+              </button>
+            </div>
+            <div class="product_item">
+              <div class="product_img">
+                <img src="image/bookook.jpg" alt="" />
+              </div>
+              <h3 class="product_title">
+                Sự lôi cuốn của content - Cách viết content hay..........
+              </h3>
+              <div class="product_price">
+                <span class="line">39.000đ</span>
+                <span class="none-500">31.200đ</span>
+                <span class="product_pecent">-20%</span>
+              </div>
+              <button class="product_btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Mua ngay</span>
+              </button>
+            </div>
+            <div class="product_item">
+              <div class="product_img">
+                <img src="image/bookook.jpg" alt="" />
+              </div>
+              <h3 class="product_title">
+                Sự lôi cuốn của content - Cách viết content hay..........
+              </h3>
+              <div class="product_price">
+                <span class="line">39.000đ</span>
+                <span class="none-500">31.200đ</span>
+                <span class="product_pecent">-20%</span>
+              </div>
+              <button class="product_btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Mua ngay</span>
+              </button>
+            </div>
+            <div class="product_item">
+              <div class="product_img">
+                <img src="image/bookook.jpg" alt="" />
+              </div>
+              <h3 class="product_title">
+                Sự lôi cuốn của content - Cách viết content hay..........
+              </h3>
+              <div class="product_price">
+                <span class="line">39.000đ</span>
+                <span class="none-500">31.200đ</span>
+                <span class="product_pecent">-20%</span>
+              </div>
+              <button class="product_btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Mua ngay</span>
+              </button>
+            </div>
+            <div class="product_item">
+              <div class="product_img">
+                <img src="image/bookook.jpg" alt="" />
+              </div>
+              <h3 class="product_title">
+                Sự lôi cuốn của content - Cách viết content hay..........
+              </h3>
+              <div class="product_price">
+                <span class="line">39.000đ</span>
+                <span class="none-500">31.200đ</span>
+                <span class="product_pecent">-20%</span>
+              </div>
+              <button class="product_btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Mua ngay</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Media -->
+      <div class="media">
+        <div class="container">
+          <h2 class="author__title media_title">đối tác báo chí & truyền thông</h2>
+          <div class="media_list">
+            <div class="media_item">
+              <img src="image/vietnam.png" alt="" />
+            </div>
+            <div class="media_item">
+              <img src="image/dantri.png" alt="" />
+            </div>
+            <div class="media_item">
+              <img src="image/vtv-3.png" alt="" />
+            </div>
+            <div class="media_item">
+              <img src="image/tiki.png" alt="" />
+            </div>
+            <div class="media_item">
+              <img src="image/kobiet.png" alt="" />
+            </div>
+            <div class="media_item">
+              <img src="image/lazada.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Register -->
+      <div class="register">
+        <div class="container">
+          <div class="register_content">
+            <h3>Đăng ký ngay</h3>
+            <p>Đăng ký nhận tin khuyến mãi và các tin tức mới nhất</p>
+          </div>
+          <div class="register_input">
+            <input type="email" placeholder="Nhập email của bạn" />
+            <button class="register_btn">Đăng ký</button>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer_inner">
+            <div class="footer_item">
+              <h3>Giới thiệu</h3>
+              <p>Trumsach.com - Trong nhà mỗi doanh nhân cần có 1 tủ sách</p>
+            </div>
+            <div class="footer_item">
+              <h3>Liên hệ</h3>
+              <p>Lô 34E - Khu đấu giá 3ha - Phúc Diễn - Bắc Từ Liêm - Hà Nội</p>
+              <p>info@trumsach.com</p>
+              <div class="footer_icon">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </div>
+            <div class="footer_item">
+              <h3>Chính sách</h3>
+              <li><a href="#">Chính sách bảo mật</a></li>
+              <li><a href="#">Chính sách giao hàng</a></li>
+              <li><a href="#">Chính sách đổi trả</a></li>
+              <li><a href="#">Chính sách hoàn tiền</a></li>
+            </div>
+            <div class="footer_item">
+              <h3>Sản phẩm</h3>
+              <li><a href="#">Sách thiếu nhi</a></li>
+              <li><a href="#">Sách kinh doanh</a></li>
+              <li><a href="#">Sách phát triển bản thân</a></li>
+            </div>
+          </div>
+        </div>
+        <div class="footer_end">
+          <div class="container">
+            <div class="footer_end-left">
+              <span>c</span>
+              <p>2019trumsach.com</p>
+            </div>
+            <div class="footer_end-right">
+              <span>Privacy Policy</span>
+              <span>Terms and Conditions</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-1.11.0.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+  <script>
+    $(document).ready(function () {
+      $("#menu").click(function () {
+        $("#list").slideToggle("slow");
+      });
+    });
+  </script>
+</html>

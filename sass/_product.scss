@@ -1,0 +1,82 @@
+.product{
+    margin-bottom: 40px;
+    &_list{
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+    &_item{
+        border: 1px solid #f1f1f1;
+        padding: 25px;
+        &:hover{
+            background-color: #f7f7f7;
+        }
+        & span{
+            font-size: 12px;
+            font-weight: 500;
+        }
+    }
+    &_img{
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        margin-bottom: 12px;
+    }
+    &_price{
+        margin-bottom: 10px;
+    }
+    &_pecent{
+        background-color: #cd2b18;
+        padding: 2px 6px;
+        border-radius: 20px;
+        color: #fff;
+    }
+    &_title{
+        color: $gray-title;
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+    &_btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        gap: 10px;
+        width: 100%;
+        padding: 10px 0;
+        background-color: #cd2b18;
+        color: #fff;
+        border: 0;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .product{
+        &_list{
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+        &_item{
+            &:last-child{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .product{
+        &_list{
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        &_item{
+            &:last-child{
+                display: block;
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .none-500{
+        display: none;
+    }
+}
