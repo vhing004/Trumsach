@@ -3,22 +3,36 @@
     font-family: "Open sans", sans-serif;
     & .containers{
         padding: 0 20px;
+        position: relative;
     }
     &_list{
         display: flex;
         padding: 15px;
-        overflow-x: scroll;
-        -moz-window-dragging: drag;
     }
     &_item{
         box-shadow: 2px 2px 3px #333;
-        margin: 0 20px;
+        margin:20px;
         & img{
             width: 250px;
         }
     }
 }
-
+.arrows{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    background-color: transparent;
+    font-size: 30px;
+}
+.pull-lefts{
+    position: absolute;
+    left: -20px;
+}
+.pull-rights{
+    position: absolute;
+    right: -20px;
+}
 .register{
     background-color: #e7ede3;
     font-family: "Open sans", sans-serif;

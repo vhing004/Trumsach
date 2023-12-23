@@ -2,6 +2,17 @@
 @import 'variable';
 @import 'global';
 @import 'navbar';
+// @import 'scss/header';
+// abstract
+@import 'scss/abstracts/variable';
+@import 'scss/abstracts/typography';
+@import 'scss/abstracts/normalize';
+
+// layout
+@import 'scss/header';
+
+
+
 @import 'striking';
 @import 'business';
 @import 'read';

@@ -59,10 +59,10 @@
               <li class="nav_item">
                 <i class="fa-solid fa-book"></i>
                 <!-- Dropdown -->
-                <div class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sản phẩm
+                <div class="dropdow downdrop">
+                  <a href="#" class="dropdown-toggl" data-toggle="dropdow">Sản phẩm
                   <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu menuDrop">
                     <li><a href="#">Doanh nhân</a></li>
                     <li><a href="#">Doanh nghiệp</a></li>
                     <li><a href="#">Tâm lý - Kỹ năng sống</a></li>
@@ -72,10 +72,10 @@
               <li class="nav_item">
                 <i class="fa-regular fa-newspaper"></i>
                 <!-- Dropdown -->
-                <div class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tin tức
+                <div class="dropdow downdrop">
+                  <a href="#" class="dropdown-toggl" data-toggle="dropdow">Tin tức
                   <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu menuDrop">
                     <li><a href="#">Báo chí - Truyền thông </a></li>
                     <li><a href="#">Kiến thức học tập</a></li>
                     <li><a href="#">Người nổi tiếng</a></li>
@@ -103,76 +103,78 @@
                 <i class="fa-brands fa-youtube" style="--color: #dc3545"></i
               ></a>
             </div>
-            <div class="nav__menu2" id="menu">
+            <!-- <div class="nav__menu2" id="menu">
               <i class="fa-solid fa-bars"></i>
+            </div> -->
+            <button class="h-menu-btn js-menu-btn" type="button">
+              <i class="fa fa-bars"></i>
+            </button>
+            <div class="l-header__widgets js-mobile-menu">
+              <button class="h-menu-close js-menu-close" type="button">
+                <i class="fa fa-long-arrow-left"></i>
+                <span>Quay lại</span>
+              </button>
+              <ul class="h-menu">
+                <li class="h-menu__item">
+                  <a class="h-menu__link" href="#!">Trang chủ</a>
+                </li>
+                <li class="h-menu__item h-dropdown">
+                  <a class="h-menu__link" href="#!">Giới Thiệu</a>
+                </li>
+                <li class="h-menu__item h-dropdown">
+                  <a class="h-menu__link" href="#!">Điểm sách</a>
+                </li>
+                <li class="h-menu__item">
+                  <a class="h-menu__link" href="#!">Sản phẩm</a>
+                  <span class="h-dropdown__toggle js-dropdown-toggle" id="menu"></span>
+                  <ul class="h-menu-2 h-dropdown__menu js-dropdown-menu" id="list">
+                    <li class="h-menu-2__item">
+                      <a class="h-menu-2__link" href="#!">Doanh nhân</a>
+                    </li>
+                    <li class="h-menu-2__item h-dropdown">
+                      <a class="h-menu-2__link" href="#!">Doanh nghiệp</a>
+                    </li>
+                    <li class="h-menu-2__item">
+                      <a class="h-menu-2__link" href="#!">Tâm lý - Kỹ năng sống</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="h-menu__item">
+                  <a class="h-menu__link" href="#!">Tin tức</a>
+                  <span class="h-dropdown__toggle js-dropdown-toggle" id="menu2"></span>
+                  <ul class="h-menu-2 h-dropdown__menu js-dropdown-menu" id="list2">
+                    <li class="h-menu-2__item">
+                      <a class="h-menu-2__link" href="#!">Báo chí - Truyền thông</a>
+                    </li>
+                    <li class="h-menu-2__item h-dropdown">
+                      <a class="h-menu-2__link" href="#!">Kiến thức học tập</a>
+                    </li>
+                    <li class="h-menu-2__item">
+                      <a class="h-menu-2__link" href="#!">Người nổi tiếng</a>
+                    </li>
+                    <li class="h-menu-2__item">
+                      <a class="h-menu-2__link" href="#!">Review sách Bizbooks</a>
+                    </li>
+                    <li class="h-menu-2__item">
+                      <a class="h-menu-2__link" href="#!">Dịch vụ</a>
+                    </li>
+                    <li class="h-menu-2__item">
+                      <a class="h-menu-2__link" href="#!">Tuyển dụng</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
         <!-- Menu -->
-        <div id="list" class="list_menu">
-          <div class="list_menu__container">
-            <ul class="list_menu_menu">
-              <li class="list_menu_item">
-                <i class="fa-solid fa-house"></i>
-                <a href="#">Trang chủ</a>
-              </li>
-              <li class="list_menu_item">
-                <i class="fa-solid fa-circle-info"></i>
-                <a href="#">Giới thiệu</a>
-              </li>
-              <li class="list_menu_item">
-                <i class="fa-solid fa-book-open-reader"></i>
-                <a href="#">Điểm sách</a>
-              </li>
-              <li class="list_menu_item">
-                <i class="fa-solid fa-book"></i>
-                <!-- <a href="#">Sản phẩm</a> -->
-                <div class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sản phẩm
-                  <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Doanh nhân</a></li>
-                    <li><a href="#">Doanh nghiệp</a></li>
-                    <li><a href="#">Tâm lý - Kỹ năng sống</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="list_menu_item">
-                <i class="fa-regular fa-newspaper"></i>
-                <!-- <a href="#">Tin tức</a> -->
-                <div class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tin tức
-                  <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Báo chí - Truyền thông </a></li>
-                    <li><a href="#">Kiến thức học tập</a></li>
-                    <li><a href="#">Người nổi tiếng</a></li>
-                    <li><a href="#">Review sách Bizbooks</a></li>
-                    <li><a href="#">Dịch vụ</a></li>
-                    <li><a href="#">Tuyển dụng</a></li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-            <div class="list_menu_search">
-              <input type="text" placeholder="Search" />
-            </div>
-            <div class="list_menu_contact">
-              <a href="#">
-                <i class="fa-brands fa-twitter" style="--color: #1da1f2"></i
-              ></a>
-              <a href="#">
-                <i
-                  class="fa-brands fa-square-facebook"
-                  style="--color: #4267b2"
-                ></i
-              ></a>
-              <a href="#">
-                <i class="fa-brands fa-youtube" style="--color: #dc3545"></i
-              ></a>
-            </div>
-          </div>
-        </div>
+
+
+
+
+
+
+
       </nav>
       <!-- Hero -->
       <div class="hero">
@@ -190,7 +192,7 @@
       <div class="striking">
         <div class="containers">
           <div class="striking__title">
-            <span class="striking-h2">bài viết nổi bật</span>
+            <span class="striking-h2">Bài viết nổi bật</span>
           </div>
           <div class="striking_container">
             <div class="striking_item striking_itemLeft">
@@ -251,7 +253,7 @@
                   </div>
                   <div class="business_info-item">
                     <i class="fa-regular fa-user"></i>
-                    <span>Nguyễn Văn Cường</span>
+                    <a href="#">Nguyễn Văn Cường</a>
                   </div>
                 </div>
                 <a href="#" class="business_title">
@@ -269,7 +271,7 @@
                   </div>
                   <div class="business_info-item">
                     <i class="fa-regular fa-user"></i>
-                    <span>Nguyễn Văn Cường</span>
+                    <a href="#">Nguyễn Văn Cường</a>
                   </div>
                 </div>
                 <a href="#" class="business_title">
@@ -287,7 +289,7 @@
                   </div>
                   <div class="business_info-item">
                     <i class="fa-regular fa-user"></i>
-                    <span>Nguyễn Văn Cường</span>
+                    <a href="#">Nguyễn Văn Cường</a>
                   </div>
                 </div>
                 <a href="#" class="business_title">
@@ -305,7 +307,7 @@
                   </div>
                   <div class="business_info-item">
                     <i class="fa-regular fa-user"></i>
-                    <span>Nguyễn Văn Cường</span>
+                    <a href="#">Nguyễn Văn Cường</a>
                   </div>
                 </div>
                 <a href="#" class="business_title">
@@ -323,7 +325,7 @@
                   </div>
                   <div class="business_info-item">
                     <i class="fa-regular fa-user"></i>
-                    <span>Nguyễn Văn Cường</span>
+                    <a href="#">Nguyễn Văn Cường</a>
                   </div>
                 </div>
                 <a href="#" class="business_title">
@@ -341,7 +343,7 @@
                   </div>
                   <div class="business_info-item">
                     <i class="fa-regular fa-user"></i>
-                    <span>Nguyễn Văn Cường</span>
+                    <a href="#">Nguyễn Văn Cường</a>
                   </div>
                 </div>
                 <a href="#" class="business_title">
@@ -588,7 +590,7 @@
       <div class="product">
         <div class="containers">
           <div class="striking__title">
-            <span class="striking-h2">sản phẩm</span>
+            <a href="" class="striking-h2">sản phẩm</a>
           </div>
           <div class="product_list">
             <div class="product_item">
@@ -869,6 +871,9 @@
     $(document).ready(function () {
       $("#menu").click(function () {
         $("#list").slideToggle("slow");
+      });
+      $("#menu2").click(function () {
+        $("#list2").slideToggle("slow");
       });
     });
   </script>

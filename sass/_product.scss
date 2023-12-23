@@ -1,6 +1,21 @@
 .product{
     margin-bottom: 40px;
     font-family: "Open sans", sans-serif;
+    & .striking-h2{
+        font-size: 30px;
+        text-transform: uppercase;
+        color: $color-main;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            bottom: -3px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: #333;
+        }
+    }
     &_list{
         display: grid;
         grid-template-columns: repeat(5, minmax(0, 1fr));

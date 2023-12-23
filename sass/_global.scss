@@ -7,9 +7,10 @@
     margin: 0 auto;
     padding: 0px 20px;
 }
-a:hover{
-    text-decoration: underline;
+a:hover,
+a:focus{
     color: $color-main;
+    text-decoration: none;
 }
 .line{
     text-decoration: line-through;
