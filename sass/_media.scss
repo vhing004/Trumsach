@@ -1,21 +1,28 @@
 .media{
     margin-bottom: 50px;
-    & .container{
+    font-family: "Open sans", sans-serif;
+    & .containers{
         padding: 0 20px;
     }
     &_list{
-        display: grid;
-        grid-template-columns: repeat(6, minmax(0, 1fr));
-        grid-gap: 15px;
+        display: flex;
+        padding: 15px;
+        overflow-x: scroll;
+        -moz-window-dragging: drag;
     }
     &_item{
         box-shadow: 2px 2px 3px #333;
+        margin: 0 20px;
+        & img{
+            width: 250px;
+        }
     }
 }
 
 .register{
     background-color: #e7ede3;
-    & .container{
+    font-family: "Open sans", sans-serif;
+    & .containers{
         display: flex;
         gap: 30px;
         align-items: center;
@@ -59,7 +66,7 @@
 
 @media screen and (max-width: 1000px) {
     .register{
-        & .container{
+        & .containers{
             display: block;
         }
         &_content{
@@ -91,7 +98,7 @@
         }
     }
     .register{
-        & .container{
+        & .containers{
             padding: 50px 20px;
         }
     }

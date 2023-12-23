@@ -1,6 +1,7 @@
 .business{
     position: relative;
     margin-bottom: 100px;
+    font-family: "Open sans", sans-serif;
     &::after{
         content: '';
         position: absolute;
@@ -11,11 +12,11 @@
         width: 100%;
         z-index: -1;
     }
-    & .container{
+    & .containers{
         display: grid;
         grid-gap: 40px;
         grid-template-columns: repeat(7, 1fr);
-        padding: 0 30px;
+        // padding: 0 0px;
     }
     &_container{
         grid-column: 1/ span 5;
@@ -45,15 +46,16 @@
             align-items: center;
             gap: 5px;
             color: $gray;
-            font-size: 15px;
+            font-size: 14px;
             & a{
                 color: $gray;
+                font-family: "Lora", sans-serif;
             }
         }
     }
     &_title{
-        font-size: 24px;
-        font-weight: 500;
+        font-size: 22px;
+        font-weight: 600;
         color: #000;
     }
     &_inner{
@@ -102,13 +104,15 @@
             margin-bottom: 15px;
             & a{
                 color: $gray;
+                font-family: "Lora", sans-serif;
                 white-space: nowrap;
+                font-size: 14px;
             }
         }
         &-title{
-            font-size: 18px;
+            font-size: 17px;
             color: #000;
-            font-weight: 500;
+            font-weight: 600;
         }
     }
 }
@@ -146,7 +150,7 @@
     .business{
         background-color: $color-dnghiep;
         padding-top: 20px;
-        & .container{
+        & .containers{
             display: flex;
             flex-direction: column;
         }
@@ -167,7 +171,7 @@
             margin-bottom: 30px;
         }
         &_title{
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 700;
         }
         &_info{
@@ -202,7 +206,7 @@
             margin-bottom: 15px;
         }
         &_title{
-            font-size: 22px;
+            font-size: 20px;
         }
         &_info{
             margin-bottom: 10px;

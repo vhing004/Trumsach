@@ -1,5 +1,6 @@
 .footer {
   background-color: #111111;
+  font-family: "Open sans", sans-serif;
   &_inner {
     padding: 90px 0 50px;
     display: grid;
@@ -30,7 +31,7 @@
   &_end {
     border-top: 1px solid #ccc;
     color: #fff;
-    & .container{
+    & .containers{
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -38,7 +39,7 @@
     }
     &-left {
       display: flex;
-      align-items: center;
+      // align-items: center;
       gap: 10px;
       & span {
         font-size: 12px;
@@ -62,7 +63,7 @@
 
 @media screen and (max-width: 1000px) {
   .footer{
-    & .container{
+    & .containers{
       padding: 30px 20px;
     }
     &_inner{
@@ -80,7 +81,7 @@
       }
     }
     &_end{
-      & .container{
+      & .containers{
         display: block;
       }
       &-left{

@@ -1,5 +1,6 @@
 .striking{
     margin-bottom: 50px;
+    font-family: "Open sans", sans-serif;
     &__title{
         border-bottom: 3px solid #f1f1f1;
         color: $color-main;
@@ -9,6 +10,7 @@
             font-size: 30px;
             text-transform: uppercase;
             padding-bottom: 3px;
+            font-weight: 700;
             &::after{
                 content: '';
                 position: absolute;
@@ -41,6 +43,7 @@
         & a{
             font-size: 28px;
             line-height: calc(43 / 28);
+            font-weight: 600;
         }
     }
     &_itemRight{
@@ -49,12 +52,11 @@
         align-items: flex-start;
         gap: 30px;
         padding: 0;
-        & img{
-            max-width: 240px;
-        }
+        margin-bottom: 20px;
         & a{
             font-size: 22px;
             line-height: calc(32 / 22);
+            font-weight: 600;
         }
     }
 }
@@ -115,9 +117,6 @@
 }
 @media screen and (max-width: 767px){
     .striking{
-        & .container{
-            padding: 0 20px;
-        }
         &_container{
             grid-template-columns: repeat(1, minmax(0, 1fr));
             grid-template-rows: repeat(4, minmax(0, 1fr));

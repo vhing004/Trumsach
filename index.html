@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trùm Sách</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -12,6 +15,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Lora:wght@400;500&family=Open+Sans:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -29,7 +38,7 @@
     <div class="wrapper">
       <!-- Navbar -->
       <nav class="nav">
-        <div class="container">
+        <div class="containers">
           <a href="index.html" class="nav_logo">
             <img src="image/logo.jpg" alt="" />
           </a>
@@ -49,11 +58,32 @@
               </li>
               <li class="nav_item">
                 <i class="fa-solid fa-book"></i>
-                <a href="#">Sản phẩm</a>
+                <!-- Dropdown -->
+                <div class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sản phẩm
+                  <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Doanh nhân</a></li>
+                    <li><a href="#">Doanh nghiệp</a></li>
+                    <li><a href="#">Tâm lý - Kỹ năng sống</a></li>
+                  </ul>
+                </div>
               </li>
               <li class="nav_item">
                 <i class="fa-regular fa-newspaper"></i>
-                <a href="#">Tin tức</a>
+                <!-- Dropdown -->
+                <div class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tin tức
+                  <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Báo chí - Truyền thông </a></li>
+                    <li><a href="#">Kiến thức học tập</a></li>
+                    <li><a href="#">Người nổi tiếng</a></li>
+                    <li><a href="#">Review sách Bizbooks</a></li>
+                    <li><a href="#">Dịch vụ</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                  </ul>
+                </div>
               </li>
             </ul>
             <div class="nav_search">
@@ -96,11 +126,32 @@
               </li>
               <li class="list_menu_item">
                 <i class="fa-solid fa-book"></i>
-                <a href="#">Sản phẩm</a>
+                <!-- <a href="#">Sản phẩm</a> -->
+                <div class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sản phẩm
+                  <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Doanh nhân</a></li>
+                    <li><a href="#">Doanh nghiệp</a></li>
+                    <li><a href="#">Tâm lý - Kỹ năng sống</a></li>
+                  </ul>
+                </div>
               </li>
               <li class="list_menu_item">
                 <i class="fa-regular fa-newspaper"></i>
-                <a href="#">Tin tức</a>
+                <!-- <a href="#">Tin tức</a> -->
+                <div class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tin tức
+                  <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Báo chí - Truyền thông </a></li>
+                    <li><a href="#">Kiến thức học tập</a></li>
+                    <li><a href="#">Người nổi tiếng</a></li>
+                    <li><a href="#">Review sách Bizbooks</a></li>
+                    <li><a href="#">Dịch vụ</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                  </ul>
+                </div>
               </li>
             </ul>
             <div class="list_menu_search">
@@ -125,11 +176,19 @@
       </nav>
       <!-- Hero -->
       <div class="hero">
-        <img src="image/header-img.jpg" alt="" />
+        <div class="hero-img">
+          <img src="image/header-img.jpg" alt="" />
+        </div>
+        <div class="hero-img">
+          <img src="image/slide1.jpg" alt="" />
+        </div>
+        <div class="hero-img">
+          <img src="image/slide2.png" alt="" />
+        </div>
       </div>
       <!-- Striking -->
       <div class="striking">
-        <div class="container">
+        <div class="containers">
           <div class="striking__title">
             <span class="striking-h2">bài viết nổi bật</span>
           </div>
@@ -175,7 +234,7 @@
       </div>
       <!-- Business -->
       <div class="business">
-        <div class="container">
+        <div class="containers">
           <div class="business_container">
             <div class="striking__title">
               <span class="striking-h2">góc doanh nhân</span>
@@ -400,7 +459,7 @@
       </div>
       <!-- Read -->
       <div class="read">
-        <div class="container">
+        <div class="containers">
           <div class="read_head">
             <img src="image/57-trang-chu.jpg" alt="" />
             <span>Phong cách đọc</span>
@@ -456,7 +515,7 @@
       </div>
       <!-- Author -->
       <div class="author">
-        <div class="container">
+        <div class="containers">
           <h2 class="author__title">Giới thiệu tác giả</h2>
           <p class="author_desc">
             Bệnh viện Đa khoa Phương Đông quy tụ đội ngũ chuyên gia, bác sĩ,
@@ -468,7 +527,6 @@
           <div class="author_container">
             <div class="author_img">
               <div class="author_img-img">
-
                 <img src="image/person.jpg" alt="" />
               </div>
               <h3>Nguyễn Văn Cường</h3>
@@ -528,7 +586,7 @@
       </div>
       <!-- Product -->
       <div class="product">
-        <div class="container">
+        <div class="containers">
           <div class="striking__title">
             <span class="striking-h2">sản phẩm</span>
           </div>
@@ -708,8 +766,10 @@
       </div>
       <!-- Media -->
       <div class="media">
-        <div class="container">
-          <h2 class="author__title media_title">đối tác báo chí & truyền thông</h2>
+        <div class="containers">
+          <h2 class="author__title media_title">
+            đối tác báo chí & truyền thông
+          </h2>
           <div class="media_list">
             <div class="media_item">
               <img src="image/vietnam.png" alt="" />
@@ -734,7 +794,7 @@
       </div>
       <!-- Register -->
       <div class="register">
-        <div class="container">
+        <div class="containers">
           <div class="register_content">
             <h3>Đăng ký ngay</h3>
             <p>Đăng ký nhận tin khuyến mãi và các tin tức mới nhất</p>
@@ -747,7 +807,7 @@
       </div>
       <!-- Footer -->
       <footer class="footer">
-        <div class="container">
+        <div class="containers">
           <div class="footer_inner">
             <div class="footer_item">
               <h3>Giới thiệu</h3>
@@ -779,7 +839,7 @@
           </div>
         </div>
         <div class="footer_end">
-          <div class="container">
+          <div class="containers">
             <div class="footer_end-left">
               <span>c</span>
               <p>2019trumsach.com</p>
@@ -812,4 +872,5 @@
       });
     });
   </script>
+  <script src="js/app.js"></script>
 </html>
