@@ -82,6 +82,8 @@ a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  z-index: 30000000;
 }
 .nav_logo {
   max-width: 125px;
@@ -161,6 +163,7 @@ a:focus {
 
 .downdrop {
   position: relative;
+  z-index: 10000;
 }
 
 .downdrop:hover .menuDrop {
@@ -168,38 +171,42 @@ a:focus {
 }
 
 .menuDrop {
+  z-index: 100000;
   position: absolute;
   display: none;
-  z-index: 100000;
+  top: 100%;
+  transform: translateY(10px);
+}
+.menuDrop::before {
+  position: absolute;
+  content: "";
+  height: 2.5rem;
+  right: 0;
+  left: 0;
+  background-color: transparent;
+  transform: translateY(-100%);
+}
+.menuDrop::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 15px;
+  transform: translateY(-50%) rotate(-45deg);
+  height: 15px;
+  width: 15px;
+  border: 1px solid #ccc;
+  border-left: 0;
+  border-bottom: 0;
+  background-color: #fff;
+}
+
+.menuDrop li a:hover {
+  color: #ee7423;
+  background-color: #fff;
 }
 
 .hero {
-  position: relative;
-  z-index: -1;
   margin-bottom: 50px;
-}
-
-.arrow {
-  position: absolute;
-  top: 80%;
-  right: 50px;
-  font-size: 22px;
-  padding: 10px 23px;
-  color: #333;
-  outline: none;
-  border: 0;
-  z-index: 10;
-  background: #f1f1f1;
-  border-radius: 6px;
-  cursor: pointer;
-}
-.arrow:hover {
-  color: #ee7423;
-}
-
-.pull-left {
-  position: absolute;
-  right: 120px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -680,18 +687,19 @@ select:focus {
   font-family: "Open sans", sans-serif;
 }
 .striking__title {
-  border-bottom: 3px solid #f1f1f1;
-  color: #ee7423;
+  border-bottom: 3px solid #ccc;
   margin-bottom: 25px;
+  display: block;
 }
-.striking__title span {
+.striking__title a {
+  color: #ee7423;
   position: relative;
   font-size: 30px;
   text-transform: uppercase;
   padding-bottom: 3px;
   font-weight: 700;
 }
-.striking__title span::after {
+.striking__title a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -866,24 +874,24 @@ select:focus {
   width: 100%;
 }
 .business_inner .business__title {
-  border-bottom: 3px solid #f1f1f1;
-  color: #ee7423;
+  border-bottom: 3px solid #ccc;
   margin-bottom: 25px;
   transform: translateY(5px);
 }
-.business_inner .business__title span {
+.business_inner .business__title a {
+  color: #ee7423;
   position: relative;
   font-size: 24px;
   padding-bottom: 3px;
 }
-.business_inner .business__title span::after {
+.business_inner .business__title a::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
   height: 3px;
-  background-color: #333;
+  background-color: #000;
 }
 .business_inner-item {
   display: flex;
@@ -926,7 +934,7 @@ select:focus {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .business_item {
-    max-width: 700px;
+    max-width: 770px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -1031,7 +1039,7 @@ select:focus {
 .read_head img {
   max-width: 85px;
 }
-.read_head span {
+.read_head a {
   font-size: 30px;
   font-weight: 500;
   color: #ee7423;

@@ -192,7 +192,7 @@
       <div class="striking">
         <div class="containers">
           <div class="striking__title">
-            <span class="striking-h2">Bài viết nổi bật</span>
+            <a href="#" class="striking-h2">Bài viết nổi bật</a>
           </div>
           <div class="striking_container">
             <div class="striking_item striking_itemLeft">
@@ -239,7 +239,7 @@
         <div class="containers">
           <div class="business_container">
             <div class="striking__title">
-              <span class="striking-h2">góc doanh nhân</span>
+              <a href="#" class="striking-h2">góc doanh nhân</a>
             </div>
             <div class="business_list">
               <div class="business_item">
@@ -354,7 +354,7 @@
           </div>
           <div class="business_inner">
             <div class="business__title">
-              <span>Đọc nhiều</span>
+              <a href="#">Đọc nhiều</a>
             </div>
             <div class="business_inner-list">
               <div class="business_inner-item">
@@ -464,7 +464,7 @@
         <div class="containers">
           <div class="read_head">
             <img src="image/57-trang-chu.jpg" alt="" />
-            <span>Phong cách đọc</span>
+            <a href="#">Phong cách đọc</a>
           </div>
           <div class="read_list">
             <div class="read_item">
@@ -518,7 +518,7 @@
       <!-- Author -->
       <div class="author">
         <div class="containers">
-          <h2 class="author__title">Giới thiệu tác giả</h2>
+          <a href="#" class="author__title">Giới thiệu tác giả</a>
           <p class="author_desc">
             Bệnh viện Đa khoa Phương Đông quy tụ đội ngũ chuyên gia, bác sĩ,
             dược sĩ và điều dưỡng được đào tạo bài bản đến chuyên sâu tại Việt
@@ -590,7 +590,7 @@
       <div class="product">
         <div class="containers">
           <div class="striking__title">
-            <a href="" class="striking-h2">sản phẩm</a>
+            <a hrea href="#" class="striking-h2">sản phẩm</a>
           </div>
           <div class="product_list">
             <div class="product_item">
@@ -769,9 +769,9 @@
       <!-- Media -->
       <div class="media">
         <div class="containers">
-          <h2 class="author__title media_title">
+          <a href="#" class="author__title media_title">
             đối tác báo chí & truyền thông
-          </h2>
+          </a>
           <div class="media_list">
             <div class="media_item">
               <img src="image/vietnam.png" alt="" />
@@ -876,6 +876,23 @@
         $("#list2").slideToggle("slow");
       });
     });
+
+
+    $(document).ready(function () {
+    // handle header nav
+    // $('.js-dropdown-toggle').on('click', function () {
+    //   $(this).toggleClass('active').siblings('.js-dropdown-menu').slideToggle();
+    // });
+    // open and close mobile menu
+    $('.js-menu-btn').on('click', function () {
+      $('.js-mobile-menu, .js-mobile-filter').addClass('is-show');
+      $('body').addClass('no-scroll');
+    });
+    $('.js-mobile-filter, .js-menu-close').on('click', function () {
+      $('.js-mobile-menu, .js-mobile-filter').removeClass('is-show');
+      $('body').removeClass('no-scroll');
+    });
+  });
   </script>
   <script src="js/app.js"></script>
 </html>
